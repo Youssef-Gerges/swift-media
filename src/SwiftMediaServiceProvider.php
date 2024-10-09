@@ -1,5 +1,6 @@
 <?php
 
+namespace LaravelDaddy\SwiftMedia;
 
 use Illuminate\Support\ServiceProvider;
 use LaravelDaddy\SwiftMedia;
