@@ -5,6 +5,7 @@ namespace LaravelDaddy\SwiftMedia;
 
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\File;
+use Illuminate\Support\Str;
 use LaravelDaddy\SwiftMedia\Repositories\MediaRepo;
 
 class SwiftMedia
@@ -17,7 +18,9 @@ class SwiftMedia
 
     public function uploadFile($model_type, $model_id, $attribute, $file, $path = '/')
     {
-        $file_path = File::move($file, $path);
+        $name = Str::random() . '.' . $file->getClientOriginalExtension();
+        $file->move($path, $name);
+        $file_path = $path . '/' . $name;
         $media = $this->mediaRepo->findFile($model_type, $model_id, $attribute);
         $this->delete($media);
         return $this->mediaRepo->addFile($model_type, $model_id, $attribute, $file_path, $media);
