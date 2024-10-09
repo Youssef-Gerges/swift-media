@@ -17,7 +17,7 @@ class SwiftMediaServiceProvider extends ServiceProvider
     public function register()
     {
         $this->app->singleton('swift-media', function ($app) {
-            return new SwiftMedia();
+            return new SwiftMedia\SwiftMedia();
         });
 
         if (file_exists(__DIR__ . '/helpers.php')) {
