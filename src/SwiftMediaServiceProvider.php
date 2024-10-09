@@ -2,7 +2,7 @@
 
 
 use Illuminate\Support\ServiceProvider;
-use LaravelDaddy\SwiftMedia\SwiftMedia;
+use LaravelDaddy\SwiftMedia;
 
 class SwiftMediaServiceProvider extends ServiceProvider
 {
