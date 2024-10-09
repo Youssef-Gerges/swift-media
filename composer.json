@@ -2,6 +2,7 @@
     "name": "laravel-daddy/swift-media",
     "description": "Easy way to manage multimedia with polymorphic table",
     "license": "MIT",
+    "version": "1.0.0",
     "autoload": {
         "psr-4": {
             "LaravelDaddy\\SwiftMedia\\": "src/"
