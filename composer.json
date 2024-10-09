@@ -1,0 +1,20 @@
+{
+    "name": "laravel-daddy/swift-media",
+    "description": "Easy way to manage multimedia with polymorphic table",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "LaravelDaddy\\SwiftMedia\\": "src/"
+        }
+    },
+    "require": {
+        "php": "8.0",
+        "laravel/laravel": ">=7.0"
+    },
+    "authors": [
+        {
+            "name": "Youssef Gerges",
+            "email": "youssefgerges12000@gmail.com"
+        }
+    ],
+}
