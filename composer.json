@@ -10,13 +10,23 @@
         }
     },
     "require": {
-        "php": "8.0",
-        "laravel/laravel": ">=7.0"
+        "php": "^8.1",
+        "illuminate/support": ">=8.0"
     },
     "authors": [
         {
             "name": "Youssef Gerges",
             "email": "youssefgerges12000@gmail.com"
         }
-    ]
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LaravelDaddy\\SwiftMedia\\SwiftMediaServiceProvider"
+            ],
+            "aliases": {
+                "SwiftMedia": "LaravelDady\\SwiftMedia\\Facade\\SwiftMedia"
+            }
+        }
+    }
 }
