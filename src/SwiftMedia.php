@@ -9,8 +9,10 @@ use LaravelDaddy\SwiftMedia\Repositories\MediaRepo;
 
 class SwiftMedia
 {
-    public function __construct(private MediaRepo $mediaRepo)
+    private $mediaRepo;
+    public function __construct()
     {
+        $this->mediaRepo = new MediaRepo();
     }
 
     public function uploadFile($model_type, $model_id, $attribute, $file, $path = '/')
