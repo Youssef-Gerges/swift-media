@@ -3,6 +3,7 @@
     "description": "Easy way to manage multimedia with polymorphic table",
     "license": "MIT",
     "version": "1.0.0",
+    "minimum-stability": "stable",
     "autoload": {
         "psr-4": {
             "LaravelDaddy\\SwiftMedia\\": "src/"
