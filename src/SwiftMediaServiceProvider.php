@@ -9,7 +9,9 @@ class SwiftMediaServiceProvider extends ServiceProvider
 {
     public function boot()
     {
-        $this->publishesMigrations([__dir__ . '/database/migrations' => database_path('migrations')], 'migrations');
+        $this->publishesMigrations([
+            __DIR__ . '/database/migrations' => database_path('migrations')
+        ], 'swift-media-migrations');
     }
 
     public function register()
